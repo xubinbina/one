@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+            body {
+                background: url(images/2.jpg) no-repeat center/100% 100%;
+                overflow: hidden;
+            }
+            .mtl {
+                width: 700px;
+                height: 700px;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                margin-left: -350px;
+                transform-style: preserve-3d;
+            }
+            .zj {
+                position: absolute;
+                bottom: -130px;
+                left: 50%;
+                margin-left: -179px;
+            }
+            .yq {
+                position: absolute;
+                width: 700px;
+                height: 700px;
+                background: url(images/fsw.png) no-repeat center/100%;
+                animation: move1 15s infinite linear;
+            }
+            @keyframes move1 {
+                form {
+                    transform: rotateZ(0deg);
+                }
+                to {
+                    transform: rotateZ(360deg);
+                }
+            }
+            @keyframes move2 {
+                from {
+                    transform: rotateZ(0deg);
+                }
+                to {
+                    transform: rotateZ(-360deg);
+                }
+            }
+            .yq img {
+                position: absolute;
+                transform-origin: center top;
+                animation: move2 15s linear infinite;
+            }
+            .img1 {
+                position: absolute;
+                left: 180px;
+                top: 44px;
+            }
+            .img2 {
+                position: absolute;
+                left: 400px;
+                top: 55px;
+            }
+            .img3 {
+                position: absolute;
+                left: 590px;
+                top: 220px;
+            }
+            .img4 {
+                position: absolute;
+                left: 570px;
+                top: 460px;
+            }
+            .img5 {
+                position: absolute;
+                left: 410px;
+                top: 620px;
+            }
+            .img6 {
+                position: absolute;
+                left: 160px;
+                top: 620px;
+            }
+            .img7 {
+                position: absolute;
+                left: 20px;
+                top: 470px;
+            }
+            .img8 {
+                position: absolute;
+                left: 0px;
+                top: 220px;
+            }
+            .logo {
+                position: absolute;
+                width: 500px;
+                left: 100px;
+                top: 260px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mtl">
+            <div class="zj">
+                <img src="images/bracket.png" />
+            </div>
+            <div class="yq">
+                <img src="images/boy.png" class="img1" />
+                <img src="images/dog.png" class="img2" />
+                <img src="images/girl.png" class="img3" />
+                <img src="images/girls.png" class="img4" />
+                <img src="images/hairboy.png" class="img5" />
+                <img src="images/mimi.png" class="img6" />
+                <img src="images/mudog.png" class="img7" />
+                <img src="images/shamegirl.png" class="img8" />
+            </div>
+            <img class="logo" src="images/big-title.png" />
+        </div>
+    </body>
+</html>
